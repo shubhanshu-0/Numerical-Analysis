@@ -6,7 +6,7 @@ import './RangeSelector.css'
 const RangeSelector = () => {
   return (
     <div className='range-selector-container'>
-        <div><h1>RANGE : </h1></div>
+        <div><h2>RANGE : </h2></div>
         <div className='range-selectors'>
           <ManualRange/>
           <AutoRange/>
