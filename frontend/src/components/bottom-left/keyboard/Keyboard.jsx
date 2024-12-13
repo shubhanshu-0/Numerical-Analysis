@@ -29,7 +29,7 @@ const Keyboard = ({method , expression , setExpression , setIterations}) => {
 
         let result = await axios({
           method : 'post' ,
-          url : `/api/methods/${method.route}` , 
+          url : `https://numerical-analysis.onrender.com/api/methods/${method.route}` , 
           data : {
             expression : `${expression}` ,
             range : []

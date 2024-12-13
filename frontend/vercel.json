@@ -1,5 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/api(.*)", "destination": "https://numerical-analysis.onrender.com/$1" }
-  ]
-}

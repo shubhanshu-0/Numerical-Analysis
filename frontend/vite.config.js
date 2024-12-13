@@ -9,7 +9,7 @@ export default defineConfig({
   server : {
     proxy : {
       '/api' : {
-        target : process.env.URL || 'https://numerical-analysis.onrender.com',
+        // target : process.env.URL || 'https://numerical-analysis.onrender.com',
         changeOrigin: true
       }
     } ,
