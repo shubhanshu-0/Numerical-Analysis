@@ -1,0 +1,40 @@
+.range-selector-container{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.range-selectors{
+    display: flex;
+    justify-content: space-evenly;
+    height: 80%;
+    font-size: 1.5rem;
+    width: 710px;
+    margin: 0px 5px;
+    background-color: transparent;
+    
+}
+h3{
+    font-weight: 200;
+}
+
+.auto-range{
+    border: 2px solid green;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.manual-range{
+    border: 1px solid red;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+    cursor: pointer;
+}

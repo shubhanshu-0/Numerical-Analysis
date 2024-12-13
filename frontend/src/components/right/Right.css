@@ -1,0 +1,25 @@
+.iterations {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.iteration {
+    display: flex;
+    width: 100%; /* Full width of the iterations container */
+    justify-content: space-between;
+}
+
+.iteration-column {
+    width: 16%; /* First column width */
+    padding: 10px;
+    border: 1px solid rgba(69, 252, 255, 0.345);
+    text-align: center;
+}
+
+.iteration-column:nth-child(2) {
+    width: 42%; /* Second column width */
+}
+
+.iteration-column:nth-child(3) {
+    width: 42%; /* Third column width */
+}

@@ -1,0 +1,41 @@
+.keyboard-container{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.symbols{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr) ;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.symbols button{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    /* border-right: none;
+    border-top: none; */
+        /* box-shadow: 1px 1px 30px 3px rgba(95, 83, 126, 0.231) inset; */
+}
+
+.symbols button:hover {
+    background-color: rgba(19, 18, 68, 0.446);
+    cursor: pointer;
+}
+
+.gen-itrs{
+    height: 50px;
+    background-color: transparent;
+    border: 3px solid rgba(22, 62, 163, 0.711);
+    cursor: pointer;
+}
+.gen-itrs:hover {
+    border: 3px solid rgb(0, 110, 255);
+}
+
+.gen-itrs:active {
+  background-color: rgba(0, 98, 255, 0.1);
+}

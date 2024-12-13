@@ -1,0 +1,37 @@
+.select-methods{
+    /* display: grid; */
+    /* align-items: center; */
+    justify-items: center;
+    /* grid-template-rows: repeat(3 , 1fr); */
+    /* grid-template-columns: repeat(3 , 1fr); */
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    height: 100%;
+    padding: 10px;
+
+}
+.methods-box{
+    display: flex;
+    gap:10px;
+}
+.method-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 100%;
+    width: 80%;
+    cursor: pointer;
+    outline: none;
+}
+
+.method-name:hover {
+    background-color: rgba(255, 255, 255, 0.065);
+}
+
+.method-description{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* box-shadow: 1px 1px 10px 1px rgba(0, 0, 255, 0.355); */
+    flex-grow: 1;
+}
