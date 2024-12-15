@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <div className="header">
-          <h1 style={{fontWeight: '300', textShadow: '1px 1px 15px rgb(195, 245, 250)' }}>NUMERICAL ANALYSIS</h1>
+          <h1 style={{fontWeight: '300', textShadow: '1px 1px 15px rgb(195, 245, 250)', padding:'15px' }}>NUMERICAL ANALYSIS</h1>
       </div>
       
       <div className="container">
