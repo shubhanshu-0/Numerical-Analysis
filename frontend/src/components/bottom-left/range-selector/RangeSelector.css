@@ -3,8 +3,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+    flex-direction: row;
 
+}
+.range{
+    width:max-content;
+}
 .range-selectors{
     display: flex;
     justify-content: space-evenly;
