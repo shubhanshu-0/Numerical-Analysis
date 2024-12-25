@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 import './InputField.css'
+import { toast } from 'sonner'
 
 const InputField = ({expression , handleChange}) => {
 
   return (
     <div className='InputField'>
-      <div><h2>F(x) : </h2></div>
-      <input type='text' value={expression} placeholder='x^3-5*x-5' onChange={()=>alert("USE KEYBOARD!")}/>
+      <input type='text' value={expression} 
+              placeholder='Expression (eg . t^3-5*t-5)'
+              onChange={()=>toast.warning("USE ON SREEN KEYBOARD!")}
+      />
     </div>
   )
 }

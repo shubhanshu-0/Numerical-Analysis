@@ -20,7 +20,7 @@ const Right = ({method , iterations , setIterations}) => {
           }
           setIterations(temp);
       }
-  });
+  }, []);
 
   return (
     <div style={{width : '100%'}}>

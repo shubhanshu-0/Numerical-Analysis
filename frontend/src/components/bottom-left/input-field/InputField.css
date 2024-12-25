@@ -1,18 +1,16 @@
 .InputField{
     display: flex;
-    /* border: 1px solid rgba(255, 255, 255, 0.352); */
     justify-content: space-between;
     padding: 10px;
     align-items: center;
     height: 70px;
-    /* border: 1px solid pink; */
     justify-content: space-between;
 }
 
 .InputField input{
     padding: 8px;
     font-size: 2rem;
-    width: 700px;
+    width: 100%;
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 0.2);
     background-color: rgba(128, 128, 128, 0.099);

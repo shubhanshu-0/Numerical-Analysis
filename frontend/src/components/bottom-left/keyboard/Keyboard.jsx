@@ -1,10 +1,12 @@
 import React from 'react'
 import './Keyboard.css'
 import axios from 'axios';
+import { toast } from 'sonner';
+
 
 const Keyboard = ({method , expression , setExpression , setIterations}) => {
 
-    const symbols = ['1' , '2' , '3' , '4' , '5' , '6' , '7' , '8' , '9' , '0' ,'x' , '(' , ')' , '/' , '*' , '+' , '-' , '^' , '=' , 'del' , 'ac'];
+    const symbols = ['1' , '2' , '3' , '4' , '5' , '6' , '7' , '8' , '9' , '0' ,'t' , '(' , ')' , '/' , '*' , '+' , '-' , '^' , '=' , 'del' , 'ac'];
 
     const handleClick = (symbol) => {
       if(symbol == 'ac') {
@@ -19,19 +21,21 @@ const Keyboard = ({method , expression , setExpression , setIterations}) => {
     const generate = async () => {
       
         if(method.status == 0){
-          alert("Select a Method First !");
+          toast.error("Select a Method First !");
           return;
         }
         if(expression == ""){
-          alert("Enter an Expression First !");
+          toast.error("Enter an Expression First !");
           return;
         }
+
+        const transformedExpression = expression.replaceAll('t', 'x');
 
         let result = await axios({
           method : 'post' ,
           url : `https://numerical-analysis.onrender.com/api/methods/${method.route}` , 
           data : {
-            expression : `${expression}` ,
+            expression : `${transformedExpression}` ,
             range : []
           }
         });

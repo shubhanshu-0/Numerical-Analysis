@@ -15,10 +15,6 @@
 .symbols button{
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.2);
-
-    /* border-right: none;
-    border-top: none; */
-        /* box-shadow: 1px 1px 30px 3px rgba(95, 83, 126, 0.231) inset; */
 }
 
 .symbols button:hover {
@@ -27,7 +23,7 @@
 }
 
 .gen-itrs{
-    height: 50px;
+    height: 80px;
     background-color: transparent;
     border: 3px solid rgba(22, 62, 163, 0.711);
     cursor: pointer;

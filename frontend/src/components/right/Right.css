@@ -17,9 +17,16 @@
 }
 
 .iteration-column:nth-child(2) {
-    width: 42%; /* Second column width */
+    width: 42%;
 }
 
 .iteration-column:nth-child(3) {
-    width: 42%; /* Third column width */
+    width: 42%; 
 }
+
+/* 
+@media screen and (max-width: 800px) {
+   .iterations{
+    min-width: 800px;
+   }
+} */
