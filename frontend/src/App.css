@@ -56,10 +56,9 @@
 
 @media screen and (max-width: 800px) {
   .left-container {
-    width: 100%;
+    min-width: 800px;
   }
-  .right-container {
-    width: 100%;
+  .right-container{
+    min-width: 800px;
   }
 }
-
