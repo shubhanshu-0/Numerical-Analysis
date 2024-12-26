@@ -11,7 +11,7 @@
 
 .iteration-column {
     width: 16%; /* First column width */
-    padding: 10px;
+    padding: 13px;
     border: 1px solid rgba(69, 252, 255, 0.345);
     text-align: center;
 }

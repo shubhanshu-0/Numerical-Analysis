@@ -24,7 +24,7 @@ const Right = ({method , iterations , setIterations}) => {
 
   return (
     <div style={{width : '100%'}}>
-      <h1 style={{textAlign:'center' , padding:'10px'}}>ITERATIONS</h1>
+      <h1 style={{textAlign:'center' , padding:'25px'}}>ITERATIONS</h1>
       
       <div className="iterations">
         {

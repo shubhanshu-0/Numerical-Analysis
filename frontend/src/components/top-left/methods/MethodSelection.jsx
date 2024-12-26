@@ -73,9 +73,9 @@ const MethodSelection = ({ method, setMethod }) => {
           </button>
         ))}
       </div>
-      <div className='method-description'>
+      {/* <div className='method-description'>
         <p>{methodDescription}</p>
-      </div>
+      </div> */}
     </div>
   );
 };
