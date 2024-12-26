@@ -6,7 +6,7 @@ import { toast } from 'sonner';
 
 const Keyboard = ({method , expression , setExpression , setIterations}) => {
 
-    const symbols = ['1' , '2' , '3' , '4' , '5' , '6' , '7' , '8' , '9' , '0' ,'t' , '(' , ')' , '/' , '*' , '+' , '-' , '^' , '=' , 'del' , 'ac'];
+    const symbols = ['1' , '2' , '3' , '4' , '5' , '6' , '7' , '8' , '9' , '0' ,'t' , '(' , ')' , '/' , '*' , '+' , '-' , '^' , 'del' , 'ac'];
 
     const handleClick = (symbol) => {
       if(symbol == 'ac') {
