@@ -1,4 +1,3 @@
-const { re } = require('mathjs');
 const {bisectionMethod , regulaFalsiMethod , newtonRaphsonMethod , secantMethod , iterationMethod} = require('../utils/calcMethods');
 
 module.exports.bisection = (req , res) => {
