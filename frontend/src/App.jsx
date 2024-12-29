@@ -15,7 +15,7 @@ function App() {
       <Toaster position='top-center' richColors />
 
       <div className="header">
-        <h1 className='text-4xl text-center pt-4'>Numerical Analysis</h1>
+        <h1 className='text-4xl text-center pt-4 flex justify-center items-center'>Numerical Analysis</h1>
       </div>
 
 
