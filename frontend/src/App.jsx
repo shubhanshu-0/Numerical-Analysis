@@ -14,8 +14,8 @@ function App() {
     <div className="App w-full h-screen max-h-screen">
       <Toaster position='top-center' richColors />
 
-      <div className="header">
-        <h1 className='text-4xl text-center pt-4 flex justify-center items-center'>Numerical Analysis</h1>
+      <div className="header flex justify-center items-center">
+        <h1 className='text-5xl lg:text-6xl text-center pt-4 flex justify-center items-center'>Numerical Analysis</h1>
       </div>
 
 
