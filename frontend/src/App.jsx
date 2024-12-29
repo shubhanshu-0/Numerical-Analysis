@@ -11,22 +11,22 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   return (
-    <div className="App w-full">
+    <div className="App w-full h-screen max-h-screen">
       <Toaster position='top-center' richColors />
 
-      <div className="header mb-8">
+      <div className="header">
         <h1 className='text-4xl text-center pt-4'>Numerical Analysis</h1>
       </div>
 
 
-      <div className=" w-full min-w-screen flex h-full lg:flex-col sm:text-sm">
+      <div className="main-content w-full p-4  flex gap-4 lg:flex-col sm:text-sm ">
 
-        <div className="left-container w-1/2 lg:w-full  h-full p-4">
+        <div className="left-container w-1/2 lg:w-full">
           <BottomLeft method={method} setMethod={setMethod} expression={expression} setExpression={setExpression} setIterations={setIterations} setLoading={setLoading} />
         </div>
 
 
-        <div className="right-container w-1/2 lg:w-full p-4">
+        <div className="right-container w-1/2 lg:w-full ">
           <Right method={method} iterations={iterations} setIterations={setIterations} loading={loading}/>
         </div>
 

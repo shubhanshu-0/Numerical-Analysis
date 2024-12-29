@@ -62,7 +62,7 @@ const MethodSelection = ({ method, setMethod }) => {
       {methodStatus.map((method) => (
         <button
           key={method.id}
-          className={`p-2 border-0 rounded-full  mr-2  sm:p-1 !sm:text-sm overflow-clip
+          className={`px-2 py-1 border-0 rounded-full  mr-2  sm:p-1 !sm:text-sm overflow-clip
              ${method.status ? 'bg-l-hilight' : 'bg-d-gray text-subtle hover:text-gray-300'}`}
           onClick={() => methodOn(method)}
         >

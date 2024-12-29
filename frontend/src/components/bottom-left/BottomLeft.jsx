@@ -14,7 +14,7 @@ const BottomLeft = ({ method, setMethod, expression, setExpression, setIteration
   }
 
   return (
-    <div className='w-full border border-gray rounded-3xl p-4 '>
+    <div className='w-full h-full border border-gray rounded-3xl p-4 '>
 
       <InputField expression={expression} handleChange={handleChange} />
 

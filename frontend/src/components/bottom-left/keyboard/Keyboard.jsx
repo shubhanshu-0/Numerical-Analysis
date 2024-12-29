@@ -53,7 +53,7 @@ const Keyboard = ({ method, expression, setExpression, setIterations, setLoading
             <button
               key={index}
               onClick={() => handleClick(symbol)}
-              className='p-4 px-6 m-2 bg-d-gray border-0 rounded-2xl text-lg sm:text-sm sm:p-2'
+              className='p-4  m-2 bg-d-gray border-0 rounded-2xl text-lg sm:text-sm sm:p-2'
             >
               {symbol}
             </button>
