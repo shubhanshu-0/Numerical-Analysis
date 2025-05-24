@@ -7,7 +7,7 @@ const InputField = ({expression , handleChange}) => {
     <div className='InputField'>
       <input type='text' value={expression} 
               placeholder='Expression (eg . t^3-5*t-5)'
-              onChange={()=>toast.warning("USE ON SREEN KEYBOARD!")}
+              onChange={()=>toast.warning("USE ON SCREEN KEYBOARD!")}
               className='w-full p-2 px-4 flex justify-center items-center border-0 rounded-xl text-xl'
       />
     </div>

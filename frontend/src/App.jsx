@@ -2,13 +2,28 @@ import './App.css';
 import BottomLeft from './components/bottom-left/BottomLeft';
 import Right from './components/right/Right';
 import { Toaster } from 'sonner'
-import { useState } from 'react';
+import { useState , useEffect} from 'react';
+import axios from 'axios';
+
 
 function App() {
   const [method, setMethod] = useState(null);
   const [expression, setExpression] = useState("");
   const [iterations, setIterations] = useState([]);
   const [loading, setLoading] = useState(false);
+
+  
+useEffect(() => {
+  const fetchInitialData = async () => {
+    try {
+      const response = await axios.get('https://numerical-analysis.onrender.com/api');
+      console.log('API response on load: WORKING');
+    } catch (error) {
+      console.error('Error calling API on load:', error);
+    }
+  };
+  fetchInitialData();
+}, []);
 
   return (
     <div className="App w-full h-screen max-h-screen">
